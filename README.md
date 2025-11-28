@@ -6,5 +6,3 @@ Vibe Shop 데모 랜딩 페이지
 - HTML
 - CSS (Tailwind + custom styles)
 - JavaScript
-
-# prac-vibe-coding

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe Shop | 感性を満たすライフスタイルストア</title>
+    <meta
+      name="description"
+      content="感性豊かなファッションとライフスタイルアイテムをひとつのサイトで。"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div class="gradient-blur pointer-events-none"></div>
+    <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-100">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <a class="text-2xl font-semibold tracking-tight" href="#">Vibe<span class="text-indigo-500">Shop</span></a>
+        <nav class="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
+          <a class="hover:text-slate-900 transition-colors" href="#new-arrivals">New</a>
+          <a class="hover:text-slate-900 transition-colors" href="#featured-categories">カテゴリー</a>
+          <a class="hover:text-slate-900 transition-colors" href="#lookbook">ルックブック</a>
+          <a class="hover:text-slate-900 transition-colors" href="#journal">ジャーナル</a>
+        </nav>
+        <div class="hidden items-center gap-4 md:flex">
+          <button class="text-sm font-medium text-slate-600 hover:text-slate-900">ログイン</button>
+          <button class="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-900">
+            カート
+          </button>
+        </div>
+        <button class="md:hidden" id="menuToggle" aria-label="モバイルメニューを開く">
+          <svg class="h-6 w-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.75h16.5M3.75 12h16.5M3.75 18.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav px-4 pb-4" id="mobileNav">
+        <div class="flex flex-col gap-4 text-sm font-medium text-slate-700">
+          <a href="#new-arrivals">New</a>
+          <a href="#featured-categories">カテゴリー</a>
+          <a href="#lookbook">ルックブック</a>
+          <a href="#journal">ジャーナル</a>
+          <button class="text-left">ログイン</button>
+          <button class="rounded-full border border-slate-200 px-4 py-2 text-left font-semibold text-slate-900">
+            カート
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto flex max-w-6xl flex-col gap-20 px-4 py-16 md:gap-24 md:py-20">
+      <section class="grid gap-10 md:grid-cols-2 md:items-center">
+        <div class="flex flex-col gap-6">
+          <span class="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-600">
+            NEW SEASON • FW25
+          </span>
+          <h1 class="text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
+            秋の陽だまりをまとった<br />
+            感性派デイリーウェア
+          </h1>
+          <p class="text-base text-slate-500 md:text-lg">
+            北欧ムードのミニマルデザインからぬくもりのあるニットまで。新しいシーズンの空気を今すぐ体感してください。
+          </p>
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a
+              class="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/10 transition hover:-translate-y-0.5"
+              href="#new-arrivals"
+              >今すぐ見る</a
+            >
+            <a
+              class="inline-flex items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-900"
+              href="#lookbook"
+              >ルックブックを見る</a
+            >
+          </div>
+          <div class="flex gap-8 text-sm text-slate-500">
+            <div>
+              <p class="text-2xl font-semibold text-slate-900">48時間</p>
+              <p>迅速配送</p>
+            </div>
+            <div>
+              <p class="text-2xl font-semibold text-slate-900">4.9/5</p>
+              <p>顧客満足度</p>
+            </div>
+            <div>
+              <p class="text-2xl font-semibold text-slate-900">24/7</p>
+              <p>ライブケア</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-card shadow-card rounded-3xl">
+            <img
+              class="h-full w-full rounded-3xl object-cover"
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+              alt="秋ムードのファッションイメージ"
+            />
+          </div>
+          <div class="absolute -left-4 -top-4 rounded-2xl bg-white px-5 py-4 shadow-lg shadow-slate-900/5">
+            <p class="text-xs font-semibold text-slate-500">今週のベストセラー</p>
+            <p class="text-base font-semibold text-slate-900">ソフトウールカーディガン</p>
+            <p class="text-xs text-emerald-500">+215件の注文</p>
+          </div>
+          <div class="absolute -bottom-6 right-2 rounded-2xl bg-slate-900 px-5 py-4 text-white shadow-xl shadow-slate-900/20">
+            <p class="text-xs uppercase tracking-widest text-slate-400">会員限定</p>
+            <p class="text-lg font-semibold">Exclusive Drop 09</p>
+            <p class="text-xs text-slate-400">今週末公開</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid gap-6 rounded-3xl bg-white/70 p-8 shadow-lg shadow-slate-900/5 sm:grid-cols-2 md:grid-cols-4">
+        <article>
+          <p class="text-sm font-semibold text-slate-500">送料無料</p>
+          <p class="text-base text-slate-900">7万円以上のご注文で配送料無料</p>
+        </article>
+        <article>
+          <p class="text-sm font-semibold text-slate-500">エコパッケージ</p>
+          <p class="text-base text-slate-900">すべての梱包材がリサイクル対応</p>
+        </article>
+        <article>
+          <p class="text-sm font-semibold text-slate-500">プレミアムケア</p>
+          <p class="text-base text-slate-900">ライブコンシェルジュが24時間サポート</p>
+        </article>
+        <article>
+          <p class="text-sm font-semibold text-slate-500">かんたん交換・返品</p>
+          <p class="text-base text-slate-900">30日以内の返送は無料</p>
+        </article>
+      </section>
+
+      <section class="flex flex-col gap-10" id="featured-categories">
+        <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm font-semibold text-indigo-500">Featured</p>
+            <h2 class="text-3xl font-semibold text-slate-900">秋のマストハブアイテム</h2>
+          </div>
+          <a class="text-sm font-semibold text-slate-500 hover:text-slate-900" href="#">すべてのカテゴリーを見る →</a>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="category-card">
+            <img
+              src="https://images.pexels.com/photos/5886040/pexels-photo-5886040.jpeg?auto=compress&cs=tinysrgb&w=900&h=900&dpr=1"
+              alt="ニットウェア"
+            />
+            <div class="flex flex-col gap-2">
+              <p class="text-sm font-semibold text-slate-500">Knitwear</p>
+              <p class="text-xl font-semibold text-slate-900">ヘリテージニットライン</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=600&q=80"
+              alt="アウター"
+            />
+            <div class="flex flex-col gap-2">
+              <p class="text-sm font-semibold text-slate-500">Outer</p>
+              <p class="text-xl font-semibold text-slate-900">シティボンバー & コート</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img
+              src="https://images.pexels.com/photos/6207442/pexels-photo-6207442.jpeg?auto=compress&cs=tinysrgb&w=900&h=900&dpr=1"
+              alt="ホームリビング"
+            />
+            <div class="flex flex-col gap-2">
+              <p class="text-sm font-semibold text-slate-500">Home Living</p>
+              <p class="text-xl font-semibold text-slate-900">ウォームトーンホームパフューム</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-8" id="new-arrivals">
+        <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm font-semibold text-indigo-500">New Arrivals</p>
+            <h2 class="text-3xl font-semibold text-slate-900">今週の新作</h2>
+          </div>
+          <div class="flex gap-3 text-sm font-semibold text-slate-500">
+            <button class="tab-button active" data-category="all">すべて</button>
+            <button class="tab-button" data-category="women">レディース</button>
+            <button class="tab-button" data-category="men">メンズ</button>
+            <button class="tab-button" data-category="home">ホーム</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="grid gap-10 rounded-[32px] bg-gradient-to-br from-indigo-600 to-slate-900 p-10 text-white lg:grid-cols-2" id="lookbook">
+        <div class="flex flex-col gap-6">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-200">Lookbook</p>
+          <h2 class="text-4xl font-semibold leading-tight">都市と黄金の夕暮れのあいだで</h2>
+          <p class="text-base text-indigo-100">
+            ソウル・漢南と聖水のストリートから着想を得たルックブック。暖かな夕焼けの光とメタリックなアクセント、抑制の効いたシルエットで再解釈しました。
+          </p>
+          <button class="self-start rounded-full bg-white/10 px-6 py-3 text-sm font-semibold backdrop-blur hover:bg-white/20">
+            ルックブックを開く
+          </button>
+        </div>
+        <div class="relative overflow-hidden rounded-3xl">
+          <img
+            class="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1498511225744-03f375ca9e8a?auto=format&fit=crop&w=900&q=80"
+            alt="ルックブックイメージ"
+          />
+        </div>
+      </section>
+
+      <section class="grid gap-8 md:grid-cols-3" id="journal">
+        <div class="md:col-span-1">
+          <p class="text-sm font-semibold text-indigo-500">Journal</p>
+          <h2 class="text-3xl font-semibold text-slate-900">感性エディトリアル</h2>
+          <p class="mt-4 text-sm text-slate-500">
+            シーズンのスタイリング提案からクリエイターインタビューまで、ブランドの世界観を深く味わえます。
+          </p>
+        </div>
+        <div class="md:col-span-2 grid gap-6 sm:grid-cols-2">
+          <article class="journal-card">
+            <p class="text-xs font-semibold text-indigo-500">STYLING</p>
+            <h3 class="text-lg font-semibold text-slate-900">トーン・オン・トーン レイヤードガイド</h3>
+            <p class="text-sm text-slate-500">ワントーンに見せる3段レイヤードのコツ</p>
+            <p class="text-xs text-slate-400">6分で読める</p>
+          </article>
+          <article class="journal-card">
+            <p class="text-xs font-semibold text-indigo-500">INTERVIEW</p>
+            <h3 class="text-lg font-semibold text-slate-900">アートディレクターのアトリエ</h3>
+            <p class="text-sm text-slate-500">感性派家具ブランドとのコラボ裏話</p>
+            <p class="text-xs text-slate-400">8分で読める</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="mx-auto mt-10 max-w-6xl rounded-[32px] bg-white/80 px-6 py-12 text-center shadow-2xl shadow-slate-900/10 md:px-16">
+      <p class="text-sm font-semibold text-indigo-500">Newsletter</p>
+      <h2 class="mt-3 text-3xl font-semibold text-slate-900">週刊ドロップニュースをお見逃しなく</h2>
+      <p class="mt-2 text-slate-500">会員限定コレクションやオフラインポップアップ情報をいち早くお届けします。</p>
+      <form class="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+        <input
+          class="w-full rounded-full border border-slate-200 px-5 py-3 text-sm focus:border-slate-900 focus:outline-none sm:w-80"
+          type="email"
+          placeholder="メールアドレスを入力"
+          required
+        />
+        <button class="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:-translate-y-0.5">
+          購読する
+        </button>
+      </form>
+    </section>
+
+    <footer class="mt-20 border-t border-slate-100 bg-white py-10">
+      <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-xl font-semibold text-slate-900">VibeShop</p>
+          <p class="text-sm text-slate-500">2025 © Modern lifestyle boutique</p>
+        </div>
+        <div class="flex gap-6 text-sm text-slate-500">
+          <a href="#">利用規約</a>
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">カスタマーセンター</a>
+        </div>
+        <div class="flex gap-3">
+          <a class="social-button" href="#" aria-label="Instagram">Insta</a>
+          <a class="social-button" href="#" aria-label="Pinterest">Pin</a>
+          <a class="social-button" href="#" aria-label="YouTube">You</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
