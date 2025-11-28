@@ -15,3 +15,5 @@ VibeShop ブランドのデモ用ショッピングページです。Tailwind CS
 
 ## デプロイ
 - Vercel で動作確認済み: https://prac-vibe-coding.vercel.app/
+- ![Uploading image.png…]()
+
